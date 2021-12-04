@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
 
-"""salesScraper.py: Pulls data from all CarMax sales listings and exports to a file called salesListingsCurrent.csv."""
 
 __author__      = "Purva Singh"
 __version__ = "1.0"
