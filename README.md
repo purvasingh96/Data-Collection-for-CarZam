@@ -20,7 +20,7 @@ There are two main features that this project delivers. Hence, this project prov
 * **First run the data web scraper and then the image web scraper.** This is because, data web scraper is used to extract all the Car stockNumbers which in turn is used to extract car images.  
 
 ## Extracting Vehicle Labels
-Python script, ***car_schema_scrapper_util.py*** extract relevant data from the CarMax API. To run the same, simply run the main function of the class:<br>
+Python script, [car_schema_scrapper_util.py](./utils/car_schema_scrapper_util.py) extract relevant data from the CarMax API. To run the same, simply run the main function of the class:<br>
 
 ### Usage
 ```python
@@ -64,7 +64,7 @@ if __name__ == '__main__':
 The two CSV files (filtered and non-filtered) will get generated at the root directory after the data web scraper completes its crawling successfully.
 
 ## Extracting Vehicle Images 
-Python script, ***car_image_scrapper_util.py*** crawls the web app to extract multiple images that cummulatively form the 360 degree view of a vehicle. In the crux, these images are an integration of multiple car images with different orientations, which is precisely what we need.
+Python script, [car_image_scrapper_util.py](./utils/car_image_scrapper_util.py) crawls the web app to extract multiple images that cummulatively form the 360 degree view of a vehicle. In the crux, these images are an integration of multiple car images with different orientations, which is precisely what we need.
 
 ### Usage
 
@@ -79,7 +79,7 @@ if __name__ == '__main__':
         c.extract_360_images(driver, car_id)
 ```
 
-`car_image_scrapper_util.py` uses a list of car's stockNumber to extract multiple images of the same car but with different orientation. To run the script, simply run the main fuction and Selenium will perform the rest of the task. <br>You can view all the images under `images/<car's stockNumber>` folder.  
+`car_image_scrapper_util.py` uses a list of car's stockNumber to extract multiple images of the same car but with different orientation. To run the script, simply run the main fuction and Selenium will perform the rest of the task. <br>You can view all the images under [images](./images) folder.  
 
 
 
